@@ -1,5 +1,5 @@
 # dashd
-Litecoind with SSL support
+Dashd with SSL support
 
 ## Deploy
 
