@@ -8,8 +8,6 @@ RUN sed -i 's/^\(\[supervisord\]\)$/\1\nnodaemon=true/' /etc/supervisor/supervis
 COPY supervisor.conf /etc/supervisor/conf.d/programs.conf
 COPY nginx.conf /etc/nginx/nginx.conf
 
-USER dash
-
 EXPOSE 443
 
 CMD ["supervisord", "-c", "/etc/supervisor/supervisord.conf"]
